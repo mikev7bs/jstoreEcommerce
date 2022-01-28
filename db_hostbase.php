@@ -10,6 +10,6 @@ catch(PDOException $e)
 {
         die('Erreur : '.$e->getMessage());
 }
-$pdo->query("SET NAMES 'utf8'");
+$pdo->query("SET NAMES 'utf8'");  // prend en compte les caracteres spéciaux
 return $pdo;
 ?>
